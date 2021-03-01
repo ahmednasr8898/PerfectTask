@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		797D37AA25ED16060027914E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37A925ED16060027914E /* AppDelegate.swift */; };
 		797D37AC25ED16060027914E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37AB25ED16060027914E /* SceneDelegate.swift */; };
-		797D37AE25ED16060027914E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37AD25ED16060027914E /* ViewController.swift */; };
+		797D37AE25ED16060027914E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37AD25ED16060027914E /* LoginViewController.swift */; };
 		797D37B125ED16060027914E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797D37AF25ED16060027914E /* Main.storyboard */; };
 		797D37B325ED16090027914E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797D37B225ED16090027914E /* Assets.xcassets */; };
 		797D37B625ED16090027914E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797D37B425ED16090027914E /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		797D37A625ED16060027914E /* PerfectTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797D37A925ED16060027914E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		797D37AB25ED16060027914E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		797D37AD25ED16060027914E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		797D37AD25ED16060027914E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		797D37B025ED16060027914E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		797D37B225ED16090027914E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		797D37B525ED16090027914E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,47 @@
 		797D37A825ED16060027914E /* PerfectTask */ = {
 			isa = PBXGroup;
 			children = (
-				797D37A925ED16060027914E /* AppDelegate.swift */,
-				797D37AB25ED16060027914E /* SceneDelegate.swift */,
-				797D37AD25ED16060027914E /* ViewController.swift */,
-				797D37AF25ED16060027914E /* Main.storyboard */,
-				797D37B225ED16090027914E /* Assets.xcassets */,
-				797D37B425ED16090027914E /* LaunchScreen.storyboard */,
-				797D37B725ED16090027914E /* Info.plist */,
+				797D37C125ED22A60027914E /* Controller */,
+				797D37C025ED22970027914E /* Storyboard */,
+				797D37BF25ED22860027914E /* Utils */,
+				797D37BE25ED22740027914E /* Delegate */,
 			);
 			path = PerfectTask;
+			sourceTree = "<group>";
+		};
+		797D37BE25ED22740027914E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				797D37A925ED16060027914E /* AppDelegate.swift */,
+				797D37AB25ED16060027914E /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		797D37BF25ED22860027914E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				797D37B225ED16090027914E /* Assets.xcassets */,
+				797D37B725ED16090027914E /* Info.plist */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		797D37C025ED22970027914E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				797D37AF25ED16060027914E /* Main.storyboard */,
+				797D37B425ED16090027914E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		797D37C125ED22A60027914E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				797D37AD25ED16060027914E /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797D37AE25ED16060027914E /* ViewController.swift in Sources */,
+				797D37AE25ED16060027914E /* LoginViewController.swift in Sources */,
 				797D37AA25ED16060027914E /* AppDelegate.swift in Sources */,
 				797D37AC25ED16060027914E /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5Y442FJFB;
-				INFOPLIST_FILE = PerfectTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PerfectTask/Utils/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5Y442FJFB;
-				INFOPLIST_FILE = PerfectTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PerfectTask/Utils/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
