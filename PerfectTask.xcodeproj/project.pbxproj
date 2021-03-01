@@ -15,6 +15,7 @@
 		7969A6CF25ED7AE000202620 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6CE25ED7AE000202620 /* SettingsViewController.swift */; };
 		7969A6E525ED9D0000202620 /* CountryCodeDropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6E325ED9D0000202620 /* CountryCodeDropDownCell.swift */; };
 		7969A6E625ED9D0000202620 /* CountryCodeDropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7969A6E425ED9D0000202620 /* CountryCodeDropDownCell.xib */; };
+		7969A6ED25EDAF2300202620 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6EC25EDAF2300202620 /* UIViewController+Extension.swift */; };
 		797D37AA25ED16060027914E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37A925ED16060027914E /* AppDelegate.swift */; };
 		797D37AC25ED16060027914E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37AB25ED16060027914E /* SceneDelegate.swift */; };
 		797D37AE25ED16060027914E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37AD25ED16060027914E /* LoginViewController.swift */; };
@@ -39,6 +40,7 @@
 		7969A6CE25ED7AE000202620 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7969A6E325ED9D0000202620 /* CountryCodeDropDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodeDropDownCell.swift; sourceTree = "<group>"; };
 		7969A6E425ED9D0000202620 /* CountryCodeDropDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCodeDropDownCell.xib; sourceTree = "<group>"; };
+		7969A6EC25EDAF2300202620 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		797D37A625ED16060027914E /* PerfectTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797D37A925ED16060027914E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		797D37AB25ED16060027914E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,40 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		7969A6EB25EDAEFC00202620 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7969A6EC25EDAF2300202620 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7969A6F125EDB0D100202620 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				797D37AD25ED16060027914E /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7969A6F225EDB0DD00202620 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				797D37DF25ED37CA0027914E /* HomeViewController.swift */,
+				797D37E225ED3D300027914E /* ChildTableViewCell.swift */,
+				797D37E325ED3D300027914E /* ChildTableViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7969A6F325EDB0F200202620 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7969A6CE25ED7AE000202620 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		797D379D25ED16060027914E = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +174,7 @@
 				797D37C025ED22970027914E /* Storyboard */,
 				797D37C825ED25C50027914E /* Model */,
 				7969A6E925EDA83100202620 /* Menu */,
+				7969A6EB25EDAEFC00202620 /* Extension */,
 				797D37BF25ED22860027914E /* Utils */,
 				797D37BE25ED22740027914E /* Delegate */,
 			);
@@ -174,11 +211,9 @@
 		797D37C125ED22A60027914E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				797D37AD25ED16060027914E /* LoginViewController.swift */,
-				797D37DF25ED37CA0027914E /* HomeViewController.swift */,
-				797D37E225ED3D300027914E /* ChildTableViewCell.swift */,
-				797D37E325ED3D300027914E /* ChildTableViewCell.xib */,
-				7969A6CE25ED7AE000202620 /* SettingsViewController.swift */,
+				7969A6F125EDB0D100202620 /* Login */,
+				7969A6F225EDB0DD00202620 /* Home */,
+				7969A6F325EDB0F200202620 /* Settings */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -337,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				797D37CF25ED26A00027914E /* LoginFailedModel.swift in Sources */,
+				7969A6ED25EDAF2300202620 /* UIViewController+Extension.swift in Sources */,
 				7969A6CA25ED706900202620 /* MenuViewController.swift in Sources */,
 				7969A6CF25ED7AE000202620 /* SettingsViewController.swift in Sources */,
 				797D37AE25ED16060027914E /* LoginViewController.swift in Sources */,

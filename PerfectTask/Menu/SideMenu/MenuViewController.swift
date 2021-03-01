@@ -35,7 +35,7 @@ class MenuViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let itemIndex = indexPath.row
         if itemIndex == 0 {
-            print("go to profile page")
+            goToByNavigate(storyboardName: "Main", viewControllerName: SettingsViewController.self)
         }else if itemIndex == 1{
             print("go to settings page")
         }else if itemIndex == 2{
@@ -43,4 +43,5 @@ class MenuViewController: UITableViewController {
         }
     }
 }
-   
+
+

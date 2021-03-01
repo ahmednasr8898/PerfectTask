@@ -30,8 +30,14 @@ class SettingsViewController: UIViewController {
         setUpCountryDropDownMenu()
         setUpLanguageDropDownMenu()
         setUpCountryCodeDropDownMenu()
+    
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
+    
     func setUpCountryDropDownMenu(){
+        countryView.layer.borderWidth = 0.5
+        countryView.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         countryDropDown.anchorView = countryView
         countryDropDown.dataSource = arrOfCountry
         countryDropDown.bottomOffset = CGPoint(x: 0, y:(countryDropDown.anchorView?.plainView.bounds.height)!)
@@ -50,6 +56,8 @@ class SettingsViewController: UIViewController {
         countryDropDown.show()
     }
     func setUpLanguageDropDownMenu(){
+        languageView.layer.borderWidth = 0.5
+        languageView.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         languageDropDown.anchorView = languageView
         languageDropDown.dataSource = arrOfLanguage
         languageDropDown.bottomOffset = CGPoint(x: 0, y:(languageDropDown.anchorView?.plainView.bounds.height)!)
@@ -68,6 +76,8 @@ class SettingsViewController: UIViewController {
         languageDropDown.show()
     }
     func setUpCountryCodeDropDownMenu(){
+        countryCodeView.layer.borderWidth = 0.5
+        countryCodeView.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         countryCodeDropDown.cellNib = UINib(nibName: "CountryCodeDropDownCell", bundle: nil)
         countryCodeDropDown.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CountryCodeDropDownCell else { return }

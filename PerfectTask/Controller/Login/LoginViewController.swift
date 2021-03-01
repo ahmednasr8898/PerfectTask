@@ -44,6 +44,7 @@ class LoginViewController: UIViewController {
                     if let userID = jsonSuccess._id {
                         print("Login Success")
                         UserDefaults.standard.setValue(userID, forKey: "UserID")
+                        self.goToByNavigate(storyboardName: "Main", viewControllerName: HomeViewController.self)
                     }else{
                         print(jsonFailed.message ?? "")
                     }
