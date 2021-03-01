@@ -31,7 +31,6 @@ class LoginViewController: UIViewController {
     func login(mobile: String, password: String){
         let url = "http://165.22.83.141/api/user/login"
         let parameters = ["val": mobile, "password": password]
-        
         AF.request(url, method: .get, parameters: parameters, encoding: URLEncoding.default).responseJSON { (response) in
             switch response.result{
             case .failure(let error):

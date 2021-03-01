@@ -15,6 +15,9 @@
 		797D37B625ED16090027914E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797D37B425ED16090027914E /* LaunchScreen.storyboard */; };
 		797D37CB25ED26160027914E /* LoginSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37CA25ED26160027914E /* LoginSuccessModel.swift */; };
 		797D37CF25ED26A00027914E /* LoginFailedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37CE25ED26A00027914E /* LoginFailedModel.swift */; };
+		797D37E025ED37CA0027914E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37DF25ED37CA0027914E /* HomeViewController.swift */; };
+		797D37E425ED3D300027914E /* ChildTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37E225ED3D300027914E /* ChildTableViewCell.swift */; };
+		797D37E525ED3D300027914E /* ChildTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797D37E325ED3D300027914E /* ChildTableViewCell.xib */; };
 		E94F794F3FA5714231E6FB52 /* Pods_PerfectTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF75ACD8C18B2B274B00B99 /* Pods_PerfectTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		797D37B725ED16090027914E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797D37CA25ED26160027914E /* LoginSuccessModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSuccessModel.swift; sourceTree = "<group>"; };
 		797D37CE25ED26A00027914E /* LoginFailedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFailedModel.swift; sourceTree = "<group>"; };
+		797D37DF25ED37CA0027914E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		797D37E225ED3D300027914E /* ChildTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildTableViewCell.swift; sourceTree = "<group>"; };
+		797D37E325ED3D300027914E /* ChildTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildTableViewCell.xib; sourceTree = "<group>"; };
 		BDC45788AEB0257E48AAE512 /* Pods-PerfectTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectTask.release.xcconfig"; path = "Target Support Files/Pods-PerfectTask/Pods-PerfectTask.release.xcconfig"; sourceTree = "<group>"; };
 		FFF75ACD8C18B2B274B00B99 /* Pods_PerfectTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfectTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				797D37AD25ED16060027914E /* LoginViewController.swift */,
+				797D37DF25ED37CA0027914E /* HomeViewController.swift */,
+				797D37E225ED3D300027914E /* ChildTableViewCell.swift */,
+				797D37E325ED3D300027914E /* ChildTableViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,6 +215,7 @@
 			files = (
 				797D37B625ED16090027914E /* LaunchScreen.storyboard in Resources */,
 				797D37B325ED16090027914E /* Assets.xcassets in Resources */,
+				797D37E525ED3D300027914E /* ChildTableViewCell.xib in Resources */,
 				797D37B125ED16060027914E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +274,8 @@
 				797D37CB25ED26160027914E /* LoginSuccessModel.swift in Sources */,
 				797D37AA25ED16060027914E /* AppDelegate.swift in Sources */,
 				797D37AC25ED16060027914E /* SceneDelegate.swift in Sources */,
+				797D37E025ED37CA0027914E /* HomeViewController.swift in Sources */,
+				797D37E425ED3D300027914E /* ChildTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
