@@ -13,6 +13,8 @@
 		7969A6C925ED706900202620 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6C525ED706900202620 /* MenuTableViewCell.swift */; };
 		7969A6CA25ED706900202620 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6C625ED706900202620 /* MenuViewController.swift */; };
 		7969A6CF25ED7AE000202620 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6CE25ED7AE000202620 /* SettingsViewController.swift */; };
+		7969A6E525ED9D0000202620 /* CountryCodeDropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6E325ED9D0000202620 /* CountryCodeDropDownCell.swift */; };
+		7969A6E625ED9D0000202620 /* CountryCodeDropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7969A6E425ED9D0000202620 /* CountryCodeDropDownCell.xib */; };
 		797D37AA25ED16060027914E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37A925ED16060027914E /* AppDelegate.swift */; };
 		797D37AC25ED16060027914E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37AB25ED16060027914E /* SceneDelegate.swift */; };
 		797D37AE25ED16060027914E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37AD25ED16060027914E /* LoginViewController.swift */; };
@@ -35,6 +37,8 @@
 		7969A6C525ED706900202620 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		7969A6C625ED706900202620 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7969A6CE25ED7AE000202620 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7969A6E325ED9D0000202620 /* CountryCodeDropDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodeDropDownCell.swift; sourceTree = "<group>"; };
+		7969A6E425ED9D0000202620 /* CountryCodeDropDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCodeDropDownCell.xib; sourceTree = "<group>"; };
 		797D37A625ED16060027914E /* PerfectTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797D37A925ED16060027914E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		797D37AB25ED16060027914E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,24 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		7969A6E225ED9B1D00202620 /* DropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				7969A6E325ED9D0000202620 /* CountryCodeDropDownCell.swift */,
+				7969A6E425ED9D0000202620 /* CountryCodeDropDownCell.xib */,
+			);
+			path = DropDownMenu;
+			sourceTree = "<group>";
+		};
+		7969A6E925EDA83100202620 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				7969A6C125ED706900202620 /* SideMenu */,
+				7969A6E225ED9B1D00202620 /* DropDownMenu */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		797D379D25ED16060027914E = {
 			isa = PBXGroup;
 			children = (
@@ -112,10 +134,10 @@
 		797D37A825ED16060027914E /* PerfectTask */ = {
 			isa = PBXGroup;
 			children = (
-				797D37C825ED25C50027914E /* Model */,
-				7969A6C125ED706900202620 /* SideMenu */,
 				797D37C125ED22A60027914E /* Controller */,
 				797D37C025ED22970027914E /* Storyboard */,
+				797D37C825ED25C50027914E /* Model */,
+				7969A6E925EDA83100202620 /* Menu */,
 				797D37BF25ED22860027914E /* Utils */,
 				797D37BE25ED22740027914E /* Delegate */,
 			);
@@ -259,6 +281,7 @@
 				7969A6C725ED706900202620 /* Menu.storyboard in Resources */,
 				797D37B625ED16090027914E /* LaunchScreen.storyboard in Resources */,
 				797D37B325ED16090027914E /* Assets.xcassets in Resources */,
+				7969A6E625ED9D0000202620 /* CountryCodeDropDownCell.xib in Resources */,
 				797D37E525ED3D300027914E /* ChildTableViewCell.xib in Resources */,
 				797D37B125ED16060027914E /* Main.storyboard in Resources */,
 			);
@@ -321,6 +344,7 @@
 				797D37AA25ED16060027914E /* AppDelegate.swift in Sources */,
 				797D37AC25ED16060027914E /* SceneDelegate.swift in Sources */,
 				7969A6C925ED706900202620 /* MenuTableViewCell.swift in Sources */,
+				7969A6E525ED9D0000202620 /* CountryCodeDropDownCell.swift in Sources */,
 				797D37E025ED37CA0027914E /* HomeViewController.swift in Sources */,
 				797D37E425ED3D300027914E /* ChildTableViewCell.swift in Sources */,
 				7969A6B525ED5AC200202620 /* ChildModel.swift in Sources */,

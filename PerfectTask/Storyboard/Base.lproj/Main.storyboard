@@ -118,7 +118,7 @@
         <!--اعدادات-->
         <scene sceneID="LBG-v5-DEE">
             <objects>
-                <viewController id="FUM-Qa-c3d" sceneMemberID="viewController">
+                <viewController id="FUM-Qa-c3d" customClass="SettingsViewController" customModule="PerfectTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBV-8O-fuy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,13 +158,24 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ma-ws-UOI">
                                                         <rect key="frame" x="7.9999999999999982" y="11.666666666666657" width="19.333333333333329" height="22"/>
                                                         <state key="normal" image="arrowtriangle.down.square" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="showCountryMenuOnClick:" destination="FUM-Qa-c3d" eventType="touchUpInside" id="KFZ-d9-skP"/>
+                                                        </connections>
                                                     </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اختر الدولة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E60-cE-yOx">
+                                                        <rect key="frame" x="276" y="12" width="73" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                                 <constraints>
                                                     <constraint firstItem="5ma-ws-UOI" firstAttribute="centerY" secondItem="QnS-nc-qrx" secondAttribute="centerY" id="ThZ-QC-e7X"/>
+                                                    <constraint firstAttribute="trailing" secondItem="E60-cE-yOx" secondAttribute="trailing" constant="5" id="YkE-hZ-2r2"/>
                                                     <constraint firstItem="5ma-ws-UOI" firstAttribute="width" secondItem="QnS-nc-qrx" secondAttribute="width" multiplier="0.0546139" id="doh-lI-LcN"/>
                                                     <constraint firstItem="5ma-ws-UOI" firstAttribute="leading" secondItem="QnS-nc-qrx" secondAttribute="leading" constant="8" id="er9-gU-HlQ"/>
+                                                    <constraint firstItem="E60-cE-yOx" firstAttribute="centerY" secondItem="QnS-nc-qrx" secondAttribute="centerY" id="pZD-Xh-Gvo"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Os2-5y-zvN">
@@ -173,6 +184,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuS-L9-bfp">
                                                         <rect key="frame" x="7.9999999999999982" y="11.666666666666686" width="19.333333333333329" height="22"/>
                                                         <state key="normal" image="arrowtriangle.down.square" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="showCountryCodeMenuOnClick:" destination="FUM-Qa-c3d" eventType="touchUpInside" id="yww-P7-9yT"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+986" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYg-Sq-P07">
                                                         <rect key="frame" x="32.333333333333343" y="12" width="41.666666666666657" height="21"/>
@@ -213,12 +227,23 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCe-Bt-Ybl">
                                                         <rect key="frame" x="7.9999999999999982" y="11.666666666666686" width="19.333333333333329" height="22"/>
                                                         <state key="normal" image="arrowtriangle.down.square" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="showLanguageMenuOnClick:" destination="FUM-Qa-c3d" eventType="touchUpInside" id="q8X-Wn-0XR"/>
+                                                        </connections>
                                                     </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اختر اللغة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riK-SD-v4E">
+                                                        <rect key="frame" x="285" y="12" width="64" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="riK-SD-v4E" secondAttribute="trailing" constant="5" id="0ee-8q-rfS"/>
                                                     <constraint firstItem="gCe-Bt-Ybl" firstAttribute="centerY" secondItem="3o1-PU-q5e" secondAttribute="centerY" id="7dr-kt-kOa"/>
                                                     <constraint firstItem="gCe-Bt-Ybl" firstAttribute="width" secondItem="3o1-PU-q5e" secondAttribute="width" multiplier="0.0546139" id="8db-9q-FDu"/>
+                                                    <constraint firstItem="riK-SD-v4E" firstAttribute="centerY" secondItem="3o1-PU-q5e" secondAttribute="centerY" id="e11-P5-6Tt"/>
                                                     <constraint firstItem="gCe-Bt-Ybl" firstAttribute="leading" secondItem="3o1-PU-q5e" secondAttribute="leading" constant="8" id="kwN-9i-kNc"/>
                                                 </constraints>
                                             </view>
@@ -309,6 +334,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="اعدادات" id="mVC-fM-37V"/>
                     <size key="freeformSize" width="414" height="900"/>
+                    <connections>
+                        <outlet property="codeLabel" destination="qYg-Sq-P07" id="iEg-HY-7Zv"/>
+                        <outlet property="countryCodeView" destination="Os2-5y-zvN" id="Rud-qd-HSs"/>
+                        <outlet property="countryLabel" destination="E60-cE-yOx" id="0jq-cd-DQb"/>
+                        <outlet property="countryView" destination="QnS-nc-qrx" id="rno-h0-7rh"/>
+                        <outlet property="languageLabel" destination="riK-SD-v4E" id="XcL-p9-3az"/>
+                        <outlet property="languageView" destination="3o1-PU-q5e" id="Lqi-VJ-H6N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Tl-ka-7iX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -370,7 +403,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4a-ff-inQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3620" y="-57"/>
+            <point key="canvasLocation" x="3519" y="10"/>
         </scene>
     </scenes>
     <resources>

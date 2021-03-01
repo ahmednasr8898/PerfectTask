@@ -9,4 +9,5 @@ target 'PerfectTask' do
     pod 'Alamofire', '~> 5.2'
     pod 'Kingfisher', '~> 6.0'
     pod 'SideMenu'
+    pod 'DropDown'
 end
