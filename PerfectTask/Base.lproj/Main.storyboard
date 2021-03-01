@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PerfectTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="oUW-48-vZW">
+                                <rect key="frame" x="62" y="74" width="290" height="128"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6eP-Y2-Ey4">
+                                <rect key="frame" x="62" y="252.00000000000003" width="290" height="96.333333333333343"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الجوال" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVn-5J-fIh">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hza-9b-jZE">
+                                        <rect key="frame" x="0.0" y="52" width="290" height="44.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hza-9b-jZE" firstAttribute="height" secondItem="MVn-5J-fIh" secondAttribute="height" id="IGt-w0-kdY"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kG0-mY-PMe">
+                                <rect key="frame" x="62" y="410.33333333333331" width="290" height="44"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="تسجيل الدخول">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTh-D2-y2I"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kG0-mY-PMe" firstAttribute="leading" secondItem="oUW-48-vZW" secondAttribute="leading" id="584-SV-2p2"/>
+                            <constraint firstItem="oUW-48-vZW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.173913" id="6rx-Do-dat"/>
+                            <constraint firstItem="kG0-mY-PMe" firstAttribute="top" secondItem="6eP-Y2-Ey4" secondAttribute="bottom" constant="62" id="8xC-Im-WcL"/>
+                            <constraint firstItem="MVn-5J-fIh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="C63-vd-8dR"/>
+                            <constraint firstItem="kG0-mY-PMe" firstAttribute="trailing" secondItem="oUW-48-vZW" secondAttribute="trailing" id="CIz-Jb-7m3"/>
+                            <constraint firstItem="oUW-48-vZW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="KE2-id-ph1"/>
+                            <constraint firstItem="6eP-Y2-Ey4" firstAttribute="trailing" secondItem="oUW-48-vZW" secondAttribute="trailing" id="KgG-Wz-a7r"/>
+                            <constraint firstItem="6eP-Y2-Ey4" firstAttribute="leading" secondItem="oUW-48-vZW" secondAttribute="leading" id="Pre-9S-Jdy"/>
+                            <constraint firstItem="oUW-48-vZW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Uhl-pr-5Tb"/>
+                            <constraint firstItem="oUW-48-vZW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="Wgw-1z-hpp"/>
+                            <constraint firstItem="6eP-Y2-Ey4" firstAttribute="top" secondItem="oUW-48-vZW" secondAttribute="bottom" constant="50" id="ngj-GV-Znw"/>
+                            <constraint firstItem="kG0-mY-PMe" firstAttribute="height" secondItem="MVn-5J-fIh" secondAttribute="height" id="oYP-2H-Y5G"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="kG0-mY-PMe" id="wnS-sQ-nm0"/>
+                        <outlet property="mobileTextField" destination="MVn-5J-fIh" id="ZaX-mY-20w"/>
+                        <outlet property="passwordTextField" destination="hza-9b-jZE" id="YBD-3A-1eH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141" y="66"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="354" height="71"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
