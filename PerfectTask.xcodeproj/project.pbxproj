@@ -12,6 +12,7 @@
 		7969A6C825ED706900202620 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7969A6C425ED706900202620 /* MenuTableViewCell.xib */; };
 		7969A6C925ED706900202620 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6C525ED706900202620 /* MenuTableViewCell.swift */; };
 		7969A6CA25ED706900202620 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6C625ED706900202620 /* MenuViewController.swift */; };
+		7969A6CF25ED7AE000202620 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6CE25ED7AE000202620 /* SettingsViewController.swift */; };
 		797D37AA25ED16060027914E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37A925ED16060027914E /* AppDelegate.swift */; };
 		797D37AC25ED16060027914E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37AB25ED16060027914E /* SceneDelegate.swift */; };
 		797D37AE25ED16060027914E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37AD25ED16060027914E /* LoginViewController.swift */; };
@@ -33,6 +34,7 @@
 		7969A6C425ED706900202620 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		7969A6C525ED706900202620 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		7969A6C625ED706900202620 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		7969A6CE25ED7AE000202620 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		797D37A625ED16060027914E /* PerfectTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797D37A925ED16060027914E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		797D37AB25ED16060027914E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				797D37DF25ED37CA0027914E /* HomeViewController.swift */,
 				797D37E225ED3D300027914E /* ChildTableViewCell.swift */,
 				797D37E325ED3D300027914E /* ChildTableViewCell.xib */,
+				7969A6CE25ED7AE000202620 /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				797D37CF25ED26A00027914E /* LoginFailedModel.swift in Sources */,
 				7969A6CA25ED706900202620 /* MenuViewController.swift in Sources */,
+				7969A6CF25ED7AE000202620 /* SettingsViewController.swift in Sources */,
 				797D37AE25ED16060027914E /* LoginViewController.swift in Sources */,
 				797D37CB25ED26160027914E /* LoginSuccessModel.swift in Sources */,
 				797D37AA25ED16060027914E /* AppDelegate.swift in Sources */,
