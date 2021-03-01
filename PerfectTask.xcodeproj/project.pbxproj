@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7969A6B525ED5AC200202620 /* ChildModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6B425ED5AC200202620 /* ChildModel.swift */; };
+		7969A6C725ED706900202620 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7969A6C225ED706900202620 /* Menu.storyboard */; };
+		7969A6C825ED706900202620 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7969A6C425ED706900202620 /* MenuTableViewCell.xib */; };
+		7969A6C925ED706900202620 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6C525ED706900202620 /* MenuTableViewCell.swift */; };
+		7969A6CA25ED706900202620 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6C625ED706900202620 /* MenuViewController.swift */; };
 		797D37AA25ED16060027914E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37A925ED16060027914E /* AppDelegate.swift */; };
 		797D37AC25ED16060027914E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37AB25ED16060027914E /* SceneDelegate.swift */; };
 		797D37AE25ED16060027914E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D37AD25ED16060027914E /* LoginViewController.swift */; };
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		659BBD6B09ECF4B781F48D05 /* Pods-PerfectTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectTask.debug.xcconfig"; path = "Target Support Files/Pods-PerfectTask/Pods-PerfectTask.debug.xcconfig"; sourceTree = "<group>"; };
 		7969A6B425ED5AC200202620 /* ChildModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildModel.swift; sourceTree = "<group>"; };
+		7969A6C225ED706900202620 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		7969A6C425ED706900202620 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		7969A6C525ED706900202620 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		7969A6C625ED706900202620 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		797D37A625ED16060027914E /* PerfectTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797D37A925ED16060027914E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		797D37AB25ED16060027914E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +70,25 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		7969A6C125ED706900202620 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				7969A6C225ED706900202620 /* Menu.storyboard */,
+				7969A6C625ED706900202620 /* MenuViewController.swift */,
+				7969A6C325ED706900202620 /* cell */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		7969A6C325ED706900202620 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				7969A6C425ED706900202620 /* MenuTableViewCell.xib */,
+				7969A6C525ED706900202620 /* MenuTableViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		797D379D25ED16060027914E = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				797D37C825ED25C50027914E /* Model */,
+				7969A6C125ED706900202620 /* SideMenu */,
 				797D37C125ED22A60027914E /* Controller */,
 				797D37C025ED22970027914E /* Storyboard */,
 				797D37BF25ED22860027914E /* Utils */,
@@ -224,6 +252,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7969A6C825ED706900202620 /* MenuTableViewCell.xib in Resources */,
+				7969A6C725ED706900202620 /* Menu.storyboard in Resources */,
 				797D37B625ED16090027914E /* LaunchScreen.storyboard in Resources */,
 				797D37B325ED16090027914E /* Assets.xcassets in Resources */,
 				797D37E525ED3D300027914E /* ChildTableViewCell.xib in Resources */,
@@ -281,10 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				797D37CF25ED26A00027914E /* LoginFailedModel.swift in Sources */,
+				7969A6CA25ED706900202620 /* MenuViewController.swift in Sources */,
 				797D37AE25ED16060027914E /* LoginViewController.swift in Sources */,
 				797D37CB25ED26160027914E /* LoginSuccessModel.swift in Sources */,
 				797D37AA25ED16060027914E /* AppDelegate.swift in Sources */,
 				797D37AC25ED16060027914E /* SceneDelegate.swift in Sources */,
+				7969A6C925ED706900202620 /* MenuTableViewCell.swift in Sources */,
 				797D37E025ED37CA0027914E /* HomeViewController.swift in Sources */,
 				797D37E425ED3D300027914E /* ChildTableViewCell.swift in Sources */,
 				7969A6B525ED5AC200202620 /* ChildModel.swift in Sources */,

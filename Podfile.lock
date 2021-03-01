@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.4.1)
   - Kingfisher (6.0.1)
+  - SideMenu (6.5.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - Kingfisher (~> 6.0)
+  - SideMenu
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
+    - SideMenu
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   Kingfisher: adde87a4f74f6a3845395769354efff593581740
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: 7ff676cf7b875f0fca18e7f135c3242db6f5861d
+PODFILE CHECKSUM: 52cf5f83f18537c3c58c0fa4027ed1181617c91d
 
 COCOAPODS: 1.10.0

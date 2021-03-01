@@ -6,11 +6,13 @@
 //
 import UIKit
 import Alamofire
+import SideMenu
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var childTableView: UITableView!
     var arrOfChild = [ChildModel]()
+    var menu: SideMenuNavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,7 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         setUpTableView()
         getChild()
+        setUpMenu()
     }
     func setUpTableView(){
         childTableView.register(UINib(nibName: "ChildTableViewCell", bundle: nil), forCellReuseIdentifier: "ChildTableViewCell")
@@ -26,6 +29,15 @@ class HomeViewController: UIViewController {
         childTableView.rowHeight = 100
         childTableView.tableFooterView = UIView()
         childTableView.separatorStyle = .none
+    }
+    func setUpMenu(){
+        menu = SideMenuNavigationController(rootViewController: MenuViewController())
+        SideMenuManager.default.leftMenuNavigationController = menu
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+        menu?.leftSide = true
+    }
+    @IBAction func showSideMenuOnClick(_ sender: UIBarButtonItem) {
+        present(menu!, animated: true)
     }
     func getChild(){
         let url = "http://165.22.83.141/api/user/childByParent"

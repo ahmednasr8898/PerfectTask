@@ -100,8 +100,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D6Q-be-1Ht">
-                        <barButtonItem key="leftBarButtonItem" image="bell.badge.fill" catalog="system" id="55h-XF-A6J"/>
-                        <barButtonItem key="rightBarButtonItem" image="line.horizontal.3" catalog="system" id="heh-lm-RXp"/>
+                        <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="55h-XF-A6J">
+                            <connections>
+                                <action selector="showSideMenuOnClick:" destination="UFK-RB-q3d" id="MMG-Wy-d8w"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="bell.badge.fill" catalog="system" id="heh-lm-RXp"/>
                     </navigationItem>
                     <connections>
                         <outlet property="childTableView" destination="U5D-vI-FM3" id="Zfm-Ha-4Mb"/>
