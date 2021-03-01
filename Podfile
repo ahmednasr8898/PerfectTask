@@ -7,5 +7,6 @@ target 'PerfectTask' do
 
   # Pods for PerfectTask
     pod 'Alamofire', '~> 5.2'
-
+    pod 'Kingfisher', '~> 6.0'
+    
 end
