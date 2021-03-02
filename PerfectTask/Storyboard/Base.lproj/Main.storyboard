@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L9W-UX-Zqf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NNO-OU-y5K">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -51,7 +51,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kG0-mY-PMe" firstAttribute="leading" secondItem="oUW-48-vZW" secondAttribute="leading" id="584-SV-2p2"/>
                             <constraint firstItem="oUW-48-vZW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.173913" id="6rx-Do-dat"/>
@@ -196,14 +196,24 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الموبيل" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gz4-jP-1CU">
+                                                        <rect key="frame" x="76" y="0.0" width="278" height="45"/>
+                                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="Gz4-jP-1CU" firstAttribute="top" secondItem="Os2-5y-zvN" secondAttribute="top" id="41n-jR-UNH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Gz4-jP-1CU" secondAttribute="trailing" id="4KG-Bf-up0"/>
                                                     <constraint firstItem="CuS-L9-bfp" firstAttribute="centerY" secondItem="Os2-5y-zvN" secondAttribute="centerY" id="9ao-QB-Bje"/>
                                                     <constraint firstItem="qYg-Sq-P07" firstAttribute="centerY" secondItem="Os2-5y-zvN" secondAttribute="centerY" id="HXf-Y3-C5P"/>
                                                     <constraint firstItem="qYg-Sq-P07" firstAttribute="leading" secondItem="CuS-L9-bfp" secondAttribute="trailing" constant="5" id="bRB-L6-ER9"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Gz4-jP-1CU" secondAttribute="bottom" id="cq6-O2-p8v"/>
                                                     <constraint firstItem="CuS-L9-bfp" firstAttribute="leading" secondItem="Os2-5y-zvN" secondAttribute="leading" constant="8" id="fz1-NO-vWN"/>
                                                     <constraint firstItem="CuS-L9-bfp" firstAttribute="width" secondItem="Os2-5y-zvN" secondAttribute="width" multiplier="0.0546139" id="uAd-zN-N79"/>
+                                                    <constraint firstItem="Gz4-jP-1CU" firstAttribute="leading" secondItem="qYg-Sq-P07" secondAttribute="trailing" constant="2" id="x8c-OQ-cdM"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تغيير كلمة المرور" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PG-yL-HaC">
@@ -442,9 +452,6 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>

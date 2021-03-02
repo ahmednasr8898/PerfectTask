@@ -24,7 +24,8 @@ class ChildTableViewCell: UITableViewCell {
             guard let photo = getUserImage else { return }
             //download photos using kingfisher
             self.childImageView.kf.indicatorType = .activity
-            if let url = URL(string: photo.imgPath ?? ""){
+            guard let imagePath = photo.imgPath else {return}
+            if let url = URL(string: imagePath){
                 self.childImageView.kf.setImage(with: url)
             }
         }
