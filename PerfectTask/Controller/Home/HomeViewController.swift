@@ -81,4 +81,13 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         cell.getUserImage = arrOfChild[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectUser = arrOfChild[indexPath.row]
+        guard let userFName = selectUser.firstname, let userLName = selectUser.surname  else {return}
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        vc.userName = "\(String(describing: userFName)) \(userLName)"
+        vc.imagePath = selectUser.imgPath ?? ""
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

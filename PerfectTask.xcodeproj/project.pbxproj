@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		794BD95625EE766A009FF35A /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BD95525EE766A009FF35A /* ActivityViewController.swift */; };
 		794BD95B25EE807B009FF35A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BD95A25EE807B009FF35A /* UIView+Extension.swift */; };
+		794BD95F25EE8F37009FF35A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BD95E25EE8F37009FF35A /* ProfileViewController.swift */; };
 		7969A6B525ED5AC200202620 /* ChildModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969A6B425ED5AC200202620 /* ChildModel.swift */; };
 		7969A6C725ED706900202620 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7969A6C225ED706900202620 /* Menu.storyboard */; };
 		7969A6C825ED706900202620 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7969A6C425ED706900202620 /* MenuTableViewCell.xib */; };
@@ -36,6 +37,7 @@
 		659BBD6B09ECF4B781F48D05 /* Pods-PerfectTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectTask.debug.xcconfig"; path = "Target Support Files/Pods-PerfectTask/Pods-PerfectTask.debug.xcconfig"; sourceTree = "<group>"; };
 		794BD95525EE766A009FF35A /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		794BD95A25EE807B009FF35A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		794BD95E25EE8F37009FF35A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7969A6B425ED5AC200202620 /* ChildModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildModel.swift; sourceTree = "<group>"; };
 		7969A6C225ED706900202620 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		7969A6C425ED706900202620 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 				794BD95525EE766A009FF35A /* ActivityViewController.swift */,
 			);
 			path = Activity;
+			sourceTree = "<group>";
+		};
+		794BD95D25EE8F1D009FF35A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				794BD95E25EE8F37009FF35A /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		7969A6B325ED570F00202620 /* Home */ = {
@@ -226,6 +236,7 @@
 			children = (
 				7969A6F125EDB0D100202620 /* Login */,
 				7969A6F225EDB0DD00202620 /* Home */,
+				794BD95D25EE8F1D009FF35A /* Profile */,
 				794BD95425EE7640009FF35A /* Activity */,
 				7969A6F325EDB0F200202620 /* Settings */,
 			);
@@ -391,6 +402,7 @@
 				794BD95B25EE807B009FF35A /* UIView+Extension.swift in Sources */,
 				7969A6CF25ED7AE000202620 /* SettingsViewController.swift in Sources */,
 				797D37AE25ED16060027914E /* LoginViewController.swift in Sources */,
+				794BD95F25EE8F37009FF35A /* ProfileViewController.swift in Sources */,
 				797D37CB25ED26160027914E /* LoginSuccessModel.swift in Sources */,
 				797D37AA25ED16060027914E /* AppDelegate.swift in Sources */,
 				797D37AC25ED16060027914E /* SceneDelegate.swift in Sources */,
