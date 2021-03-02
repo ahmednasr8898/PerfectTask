@@ -454,7 +454,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nZ2-Ut-URv">
-                        <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="l41-KK-QaI"/>
+                        <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="l41-KK-QaI">
+                            <connections>
+                                <action selector="showSideMenuOnClick:" destination="3kV-6e-cpE" id="ft1-Ci-cbk"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="bell.badge.fill" catalog="system" id="rSQ-D8-oBV"/>
                     </navigationItem>
                     <connections>
