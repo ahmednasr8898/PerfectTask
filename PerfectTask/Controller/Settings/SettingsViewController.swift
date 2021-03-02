@@ -30,11 +30,9 @@ class SettingsViewController: UIViewController {
         setUpCountryDropDownMenu()
         setUpLanguageDropDownMenu()
         setUpCountryCodeDropDownMenu()
-    
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
     }
-    
     func setUpCountryDropDownMenu(){
         countryView.layer.borderWidth = 0.5
         countryView.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)

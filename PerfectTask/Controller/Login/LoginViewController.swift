@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
         passwordTextField.layer.cornerRadius = 10
         passwordTextField.backgroundColor = .white
         loginButton.layer.cornerRadius = 10
+        navigationController?.navigationBar.isHidden = true
     }
     @IBAction func loginOnClick(_ sender: UIButton) {
         guard let mobile = mobileTextField.text, !mobile.isEmpty, let password = passwordTextField.text, !password.isEmpty else {return}
