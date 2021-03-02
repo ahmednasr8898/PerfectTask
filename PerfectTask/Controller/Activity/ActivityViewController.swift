@@ -16,8 +16,14 @@ class ActivityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpNavigation()
         setUpDesign()
         setUpMenu()
+    }
+    func setUpNavigation(){
+        let logo = UIImage(named: "bin")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
     }

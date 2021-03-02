@@ -16,12 +16,18 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.isHidden = false
+        setUpNavigation()
         setUpTableView()
         getChild()
         setUpMenu()
+    }
+    func setUpNavigation(){
+        let logo = UIImage(named: "bin")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isHidden = false
     }
     func setUpTableView(){
         childTableView.register(UINib(nibName: "ChildTableViewCell", bundle: nil), forCellReuseIdentifier: "ChildTableViewCell")
