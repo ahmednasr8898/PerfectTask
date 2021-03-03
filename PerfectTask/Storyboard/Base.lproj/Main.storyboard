@@ -68,10 +68,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="llT-Xw-FJt"/>
+                    <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="loginButton" destination="kG0-mY-PMe" id="wnS-sQ-nm0"/>
                         <outlet property="mobileTextField" destination="MVn-5J-fIh" id="ZaX-mY-20w"/>
                         <outlet property="passwordTextField" destination="hza-9b-jZE" id="YBD-3A-1eH"/>
+                        <outlet property="topLoginButtonConstraint" destination="8xC-Im-WcL" id="Lkd-ke-Vwu"/>
+                        <outlet property="topLogoConstraint" destination="KE2-id-ph1" id="qiY-Tx-3dP"/>
+                        <outlet property="topStackConstraint" destination="ngj-GV-Znw" id="ZBG-Pz-RvF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,11 +114,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="childTableView" destination="U5D-vI-FM3" id="Zfm-Ha-4Mb"/>
+                        <outlet property="leadingTableViewConstaring" destination="j5m-y3-rWt" id="afa-m7-Idj"/>
+                        <outlet property="topTableViewConstarint" destination="Cee-So-Dmn" id="bTF-el-4Vv"/>
+                        <outlet property="trailingTableViewConstraint" destination="Fbo-yY-rV5" id="cBd-4u-HQ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G75-En-y5k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3380" y="-333"/>
+            <point key="canvasLocation" x="3379.7101449275365" y="-333.42391304347831"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="GrC-ux-Xfp">
@@ -125,7 +132,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="Aov-Yi-38i">
-                                <rect key="frame" x="145" y="90.333333333333343" width="124" height="110.33333333333334"/>
+                                <rect key="frame" x="151.66666666666666" y="90.333333333333343" width="110.66666666666666" height="110.33333333333334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Aov-Yi-38i" secondAttribute="height" multiplier="1:1" id="oT1-4Q-01F"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="معاذ علي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yk1-Rl-xqr">
                                 <rect key="frame" x="166.66666666666666" y="44" width="81" height="26.333333333333329"/>
@@ -278,7 +288,6 @@
                             <constraint firstItem="t6Q-Dl-tGr" firstAttribute="leading" secondItem="NL7-9j-Iry" secondAttribute="leading" id="Rh5-0E-XMU"/>
                             <constraint firstItem="bbG-yY-Ub0" firstAttribute="trailing" secondItem="qbW-WB-pEw" secondAttribute="trailing" id="T15-tn-sGq"/>
                             <constraint firstItem="NL7-9j-Iry" firstAttribute="height" secondItem="Wrk-fd-DOI" secondAttribute="height" multiplier="0.06" id="VX1-3F-nue"/>
-                            <constraint firstItem="Aov-Yi-38i" firstAttribute="width" secondItem="Wrk-fd-DOI" secondAttribute="width" multiplier="0.3" id="Vq0-y8-cj2"/>
                             <constraint firstItem="Bvi-1G-bEK" firstAttribute="height" secondItem="NL7-9j-Iry" secondAttribute="height" multiplier="1.02273" id="Ws2-Xc-WoL"/>
                             <constraint firstItem="t6Q-Dl-tGr" firstAttribute="height" secondItem="Wrk-fd-DOI" secondAttribute="height" multiplier="0.1" id="XLo-0G-vqh"/>
                             <constraint firstItem="t6Q-Dl-tGr" firstAttribute="trailing" secondItem="NL7-9j-Iry" secondAttribute="trailing" id="YFf-rC-QIm"/>
@@ -659,8 +668,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="firstView" destination="SjZ-y6-nX8" id="Mjw-HT-IUd"/>
+                        <outlet property="leadingViewConstraint" destination="ohn-Kx-BMU" id="wHG-fr-WlJ"/>
                         <outlet property="secondView" destination="zfq-1b-yJc" id="ugV-bf-5Ev"/>
                         <outlet property="thirdView" destination="1zH-Iq-VaY" id="pZB-Ch-7qp"/>
+                        <outlet property="topFirstViewConstraint" destination="8of-71-7h7" id="hn4-Fq-aDW"/>
+                        <outlet property="topSecondViewConstraint" destination="oZe-6I-gXN" id="a5L-AK-1FM"/>
+                        <outlet property="topThirdViewConstraint" destination="J7h-G1-z4F" id="5dg-7F-lL3"/>
+                        <outlet property="trailingViewConstraint" destination="JXn-8C-IiJ" id="k87-Ty-7uB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GhQ-E3-jMO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -906,11 +920,27 @@
                         <outlet property="countryView" destination="QnS-nc-qrx" id="rno-h0-7rh"/>
                         <outlet property="languageLabel" destination="riK-SD-v4E" id="XcL-p9-3az"/>
                         <outlet property="languageView" destination="3o1-PU-q5e" id="Lqi-VJ-H6N"/>
+                        <outlet property="leadingTextFieldConstraint" destination="i90-SV-UM1" id="kyv-7I-bxV"/>
+                        <outlet property="topButtonConstraint" destination="EoF-ox-5Wn" id="h7x-Zu-aKT"/>
+                        <outlet property="topCountryLabelConstrint" destination="BQT-0r-e8T" id="ihl-Qu-K1s"/>
+                        <outlet property="topCountryTextFieldConstrint" destination="Llg-Zu-kdc" id="Mek-d7-687"/>
+                        <outlet property="topEmailLabelConstraint" destination="zeN-mX-B5J" id="rbU-bv-gzD"/>
+                        <outlet property="topEmailTextFieldConstrint" destination="Y3p-3P-nfU" id="cY3-A4-l8C"/>
+                        <outlet property="topLabelConstraint" destination="jhN-U5-qqj" id="C3c-aC-3ls"/>
+                        <outlet property="topLangLabelConstraint" destination="qSd-vW-JUm" id="coL-I0-MQl"/>
+                        <outlet property="topLanguageTextFieldConstraint" destination="4wm-8c-div" id="AfR-Be-9j8"/>
+                        <outlet property="topNubmerTextFieldConstraint" destination="yXo-fu-Y5k" id="i3u-79-kgq"/>
+                        <outlet property="topNumberLabelConstrint" destination="gya-QW-Gc0" id="Q3n-YL-H91"/>
+                        <outlet property="topPasswordLabelConstraint" destination="e4L-wd-uRq" id="6xa-ve-Vi7"/>
+                        <outlet property="topPasswordTextFieldConstraint" destination="bYe-Pb-pk2" id="nAu-ds-deJ"/>
+                        <outlet property="topTextFieldConstraint" destination="Z1p-7h-f78" id="pHJ-qh-8V1"/>
+                        <outlet property="trailingLabelConstrint" destination="gJ9-Vy-RH4" id="w4n-2g-gng"/>
+                        <outlet property="trailingTextFieldConstraint" destination="qNF-1j-Q0b" id="T1p-Ov-ncQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Tl-ka-7iX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4829" y="380"/>
+            <point key="canvasLocation" x="4828.985507246377" y="379.89130434782612"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oLp-Zi-RNt">

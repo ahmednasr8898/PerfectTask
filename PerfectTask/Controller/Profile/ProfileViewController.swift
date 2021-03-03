@@ -42,7 +42,7 @@ class ProfileViewController: UIViewController {
     func setUpUserImage(){
         userNameLabel.text = userName
         if let url = URL(string: imagePath ?? ""){ self.userImageView.kf.setImage(with: url) }
-        userImageView.layer.cornerRadius = userImageView.frame.height / 2
+        userImageView.layer.cornerRadius = userImageView.frame.height * 0.4
         userImageView.clipsToBounds = true
     }
     func setUpGenderDropDownMenu(){

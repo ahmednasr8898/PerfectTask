@@ -13,13 +13,19 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var childTableView: UITableView!
     var arrOfChild = [ChildModel]()
     var menu: SideMenuNavigationController?
-    
+    @IBOutlet weak var trailingTableViewConstraint: NSLayoutConstraint!
+    @IBOutlet weak var leadingTableViewConstaring: NSLayoutConstraint!
+    @IBOutlet weak var topTableViewConstarint: NSLayoutConstraint!
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpNavigation()
         setUpTableView()
         getChild()
         setUpMenu()
+    }
+    override func viewDidLayoutSubviews() {
+        setUpConstraint()
     }
     func setUpNavigation(){
         let logo = UIImage(named: "bin")
@@ -28,6 +34,13 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isHidden = false
+    }
+    func setUpConstraint(){
+        let viewHeight = self.view.frame.height
+        let viewWidth = self.view.frame.width
+        topTableViewConstarint.constant = viewHeight * 0.020
+        leadingTableViewConstaring.constant = viewWidth * 0.060
+        trailingTableViewConstraint.constant = viewWidth * 0.060
     }
     func setUpTableView(){
         childTableView.register(UINib(nibName: "ChildTableViewCell", bundle: nil), forCellReuseIdentifier: "ChildTableViewCell")

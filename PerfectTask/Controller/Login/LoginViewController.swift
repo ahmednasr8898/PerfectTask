@@ -12,10 +12,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var mobileTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var topLogoConstraint: NSLayoutConstraint!
+    @IBOutlet weak var topStackConstraint: NSLayoutConstraint!
+    @IBOutlet weak var topLoginButtonConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpDesign()
+    }
+    override func viewDidLayoutSubviews() {
+        setUpConstraint()
     }
     func setUpDesign(){
         mobileTextField.layer.cornerRadius = 10
@@ -24,6 +30,12 @@ class LoginViewController: UIViewController {
         passwordTextField.backgroundColor = .white
         loginButton.layer.cornerRadius = 10
         navigationController?.navigationBar.isHidden = true
+    }
+    func setUpConstraint(){
+        let viewHeight = self.view.frame.height
+        topLogoConstraint.constant = viewHeight * 0.100
+        topStackConstraint.constant = viewHeight * 0.067
+        topLoginButtonConstraint.constant = viewHeight * 0.084
     }
     @IBAction func loginOnClick(_ sender: UIButton) {
         guard let mobile = mobileTextField.text, !mobile.isEmpty, let password = passwordTextField.text, !password.isEmpty else {return}
